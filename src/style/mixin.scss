@@ -1,0 +1,8 @@
+@mixin full-block() {
+  width: 100%;height: 100%;
+}
+
+@mixin remove-ul-def {
+  padding: 0;
+  margin: 0;
+}

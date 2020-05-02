@@ -1,11 +1,19 @@
 <template>
   <div style="height: 100%">
-    <div class="layout-aside">Aside</div>
-    <div class="layout-index">
-      <div class="layout-header">Header</div>
-      <div class="layout-body">Main</div>
+    <div class="layout-aside">
+      <slot name="aside"></slot>
     </div>
-    <div class="layout-footer">Footer</div>
+    <div class="layout-index">
+      <div class="layout-header">
+        <slot name="header"></slot>
+      </div>
+      <div class="layout-body">
+        <slot name="body"></slot>
+      </div>
+    </div>
+    <div class="layout-footer">
+      <slot name="footer"></slot>
+    </div>
   </div>
 </template>
 
