@@ -18,7 +18,8 @@ module.exports = {
     "consistent-return": 0,
     "comma-spacing": 0,//逗号前后的空格
     "quotes": [0],//引号类型 `` "" ''
-    'semi': 0
+    'semi': 0,
+    "object-curly-spacing": 0
   },
   overrides: [
     {
