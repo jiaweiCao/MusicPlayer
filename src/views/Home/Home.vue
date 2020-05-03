@@ -4,9 +4,10 @@
       <template slot="aside">
         <Menu></Menu>
       </template>
-      <slot name="header"></slot>
-      <slot name="body"></slot>
-      <slot name="footer"></slot>
+      <template slot="header">
+      </template>
+      <template slot="footer">
+      </template>
     </MainLayout>
   </div>
 </template>
@@ -15,11 +16,12 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import MainLayout from "../../components/layout/MainLayout.vue"
 import Menu from "./menu-sider.vue"
-
+import Recommend from "../recommend/index.vue"
 @Component({
   components: {
     MainLayout,
-    Menu
+    Menu,
+    Recommend
   }
 })
 export default class Home extends Vue {

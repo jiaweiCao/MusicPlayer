@@ -8,7 +8,7 @@
         <slot name="header"></slot>
       </div>
       <div class="layout-body">
-        <slot name="body"></slot>
+        <router-view />
       </div>
     </div>
     <div class="layout-footer">
@@ -28,7 +28,7 @@ export default class MainLayout extends Vue {
 <style scoped lang="scss">
 .layout {
   &-aside {
-    background-color: aquamarine;
+    background-color: #171718;
     position: absolute;
     top: 0;
     left: 0;
@@ -39,21 +39,22 @@ export default class MainLayout extends Vue {
     position: absolute;
     top: 0;
     left: $aside-width;
-    height: calc(100% - 60px);
+    height: calc(100% - 62px);
     width: calc(100% - #{$aside-width});
   }
   &-header {
     width: 100%;
     height: 50px;
-    background-color: coral;
+    background-color: #1E1E1F;
   }
   &-body {
     width: 100%;
-    background-color: sandybrown;
+    background-color: #1E1E1F;
     height: calc(100% - 50px);
   }
   &-footer {
-    background-color: aqua;
+    border-top: 2px #343435 solid;
+    background-color: #1E1E1F;
     position: absolute;
     bottom: 0;
     left: 0;

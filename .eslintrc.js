@@ -19,7 +19,12 @@ module.exports = {
     "comma-spacing": 0,//逗号前后的空格
     "quotes": [0],//引号类型 `` "" ''
     'semi': 0,
-    "object-curly-spacing": 0
+    "object-curly-spacing": 0,
+    " lines-between-class-members": 0,
+    "no-trailing-spaces": 0,
+    "indent": 0,
+    "object-curly-newline": 0,
+    "block-spacing": 0
   },
   overrides: [
     {

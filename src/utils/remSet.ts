@@ -8,7 +8,7 @@ export const fontSize = 14;
     const html = document.getElementsByTagName('html')[0]
     const width = html.clientWidth
     console.log(html.clientWidth)
-    let calcSize = fontSize * (width / 1500)
+    let calcSize = fontSize * (width / 1920)
     calcSize = Math.min(maxFontSize, calcSize)
     calcSize = Math.max(minFontSize, calcSize)
     html.style.fontSize = calcSize + 'px'
