@@ -25,10 +25,9 @@ const $SongsService = SongsService.getInstance();
 export default class HotList extends Vue {
   private cardList: CommendSong[] = []
   private getDetail (item: CommendSong) {
-    const id = item.id
+    const id = String(item.id)
     $SongsService.getSongListDetail(id).then((res: SongListResponse) => {
-      console.log(res)
-      this.$router.push({path: "./songList"})
+      this.$router.push({path: "./songList", query: {id: id}})
     })
   }
 

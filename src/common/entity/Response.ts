@@ -48,7 +48,7 @@ export class CommendSong {
 // 歌单详情
 export class SongListResponse {
   code: code;
-  playList: any[];
+  playlist: any;
   privileges: any[];
   relatedVideos: any[];
   urls: any[]
