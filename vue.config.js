@@ -34,7 +34,11 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        prependData: `@import "~@/style/variables.scss"; @import "~@/style/mixin.scss";`
+        prependData: `
+        @import "~@/style/variables.scss";
+        @import "~@/style/mixin.scss";
+        @import "~@/style/hover.scss";
+        `
       }
     }
   }

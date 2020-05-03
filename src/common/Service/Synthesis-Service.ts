@@ -1,5 +1,5 @@
 import {BaseService} from "./BaseService"
-import {BannerRespones} from "../entity/Response"
+import {BannerResponse} from "../entity/Response"
 // 综合类型的接口
 export class SynthesisService extends BaseService{
   constructor() {
@@ -7,16 +7,14 @@ export class SynthesisService extends BaseService{
   }
   static instance: SynthesisService;
   static getInstance () {
-    return !SynthesisService.instance ?  SynthesisService.instance = new SynthesisService : SynthesisService.instance
+    if (!SynthesisService.instance) {
+      SynthesisService.instance = new SynthesisService
+    }
+    return SynthesisService.instance
   }
 
   // 获取到banner的图片
-  public getBannerPic () :Promise<BannerRespones>{
-    return this.request({
-      method: "GET",
-      url: "./banner"
-    });
-  }
+  public getBannerPic = () :Promise<BannerResponse> => this.request.get("./banner")
 
   // 获取用户电台
 }

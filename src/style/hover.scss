@@ -1,0 +1,32 @@
+@import "options";
+@import "mixin";
+@import "hack";
+@import "effects";
+@if $includeClasses {
+  .#{$nameSpace}-bob {
+    @include bob();
+  }
+}
+@if $includeClasses {
+  .#{$nameSpace}-bounce-to-bottom {
+    @include bounce-to-bottom();
+  }
+}
+
+@if $includeClasses {
+  .#{$nameSpace}-radial-out {
+    @include radial-out();
+  }
+}
+
+@if $includeClasses {
+  .#{$nameSpace}-fade {
+    @include fade();
+  }
+}
+@if $includeClasses {
+  .#{$nameSpace}-back-pulse {
+    @include back-pulse();
+  }
+}
+

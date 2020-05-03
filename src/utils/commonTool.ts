@@ -60,3 +60,12 @@ export function throttle(func: (val: any) => any, wait: number, context: any = n
     return result;
   };
 };
+
+export function getUrlWithParams (url: string, w: number, h?: number) :string{
+  if (!h) {
+    h = w
+  }
+  url += `?param=${w}y${h}`
+  return url
+}
+
